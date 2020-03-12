@@ -1,0 +1,13 @@
+.display {
+    /* ocupa as 4 colunas de uma linha */
+    grid-column: span 4;
+    background-color: #0004;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* espaçamento das bordas */
+    padding: 20px;
+    font-size: 2.1em;
+    overflow: hidden;
+}

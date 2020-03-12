@@ -1,0 +1,44 @@
+/* sintaxe para criar variáveis no css */
+:root {
+    --bg-button: #f0f0f0;
+    --border-button: solid 1px #888;
+
+
+}
+
+.button {
+    font-size: 1.4em;
+    /* var() para referenciar uma variável */
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    /* outline é a borda azul que fica quando clicamos em um botão */
+    outline: none;
+}
+
+/* configuração quando o botão for clicado */
+.button:active {
+    background-color: #CCC;
+}
+
+/* para o botão ocupar dois espaços */
+.button.double {
+    grid-column: span 2;
+}
+
+/* para o botão ocupar três espaços */
+.button.triple {
+    grid-column: span 3;
+}
+
+/* quando o botão representar uma operação */
+.button.operation {
+    background-color: #fa8231;
+    color: #FFF;
+}
+
+/* quando o botão da operação for clicado */
+.button.operation:active {
+    background-color: #fa8231cc;
+}
